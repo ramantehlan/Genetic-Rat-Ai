@@ -1,13 +1,107 @@
-html, body{
-	font-size:12px;
-	margin:0px; 
-	padding:0px;
-	background-color:rgb(30,10,30);
+body {
+    background-color: #054A91;
+    font-family: lato;
+    margin:0px;
+    padding:0px;
+    font-size:14px;
+    color:#3d348b;
+  }
+
+.panel{       
+  position:absolute;
+  background-color:white;
+  width:340px;
+  height:100%;
+  float:left;
+  padding:20px;
+  padding-top:0px;
+  padding-bottom:0px;
+  
 }
 
-.center{
-  align-items: center;
-  display: flex;
-  justify-content: center;
+
+
+.panel h1{font-family:roboto;
+         font-size:28px;
+         font-weight:normal;
+         text-align:center;
+         color:#000;
 }
+
+.panel h2{font-family:roboto;
+          font-weight:normal;
+          font-size:15px;
+          text-align:center;
+          margin-top:-5px;
+}
+
+.details{
+        margin-top:20px;
+}
+
+.item{      height:25px;
+             line-height:25px;
+}
+
+.score_item{max-width:180px;
+            font-size:22px;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            margin:0px auto;
+          border-radius:5px;
+          border:1px solid rgba(210,210,210,0.55);
+          font-family:roboto;
+
+  }
+
+.score_item .item_head{
+      width:80px;
+      font-size:20px;
+}
+
+.score_item .item_value{
+      margin-left:80px;
+}
+
+.item_head{float:left;
+             width:90px;
+             font-size:16px;
+}
+
+.item_value{font-size:14px;
+        color:#7F7F7F;
+        margin-left:95px;
+}
+
+
+
+.instructions{padding-top:25px;
+              padding-bottom:5px;
+              margin-top:40px;
+              /*border-top:1px solid #B7B7B7;*/
+              
+}
+
+.instructions b{color:#000;}
+
+.controls{
+          margin-top:5px;
+         -webkit-column-count: 2; /* Chrome, Safari, Opera */
+          -moz-column-count: 2; /* Firefox */
+          column-count: 2;}
+
+
+
+.game_area{
+  position:absolute;
+  top:30px;
+  left:530px;
+
+}
+
+.hide{
+	display:none;
+}
+
 

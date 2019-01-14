@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DeathCircle</title>
+	<title>Genetic-Rat-Ai</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" type="text/css" href="deathCircle.css">
+	<link rel="stylesheet" type="text/css" href="game.css">
 </head>
 <body>
+	<div class='panel'>
 
-	<div class="center">
+
+     <h1>
+       Genetic Rat AI
+     </h1>
+     <h2>
+          An implementation of Genetic Algorithms 
+          to create evolving/mutating AI to reach cheese.
+     </h2>
+
+     <div class='details'>
+          <div class='item score_item' >
+                    <div class="item_head">Score:</div>  
+                    <div class="item_value" id='score' style="font-size:16px;">-</div>
+          </div><br>
+
+          
+          
+          <div class="item">
+              <div class="item_head">Speed:</div>
+              <div class="item_value" id='speed'>-</div>
+          </div>
+          <div class="item">
+              <div class="item_head">Blocks:</div>
+              <div class="item_value" id='blocks'>-</div>
+          </div>
+          <div class="item">
+              <div class="item_head">Generation:</div>
+              <div class="item_value">-</div>
+          </div>
+          <div class="item">
+              <div class="item_head">Genome:</div>
+              <div class="item_value">-</div>
+          </div> 
+
+     </div>
+
+
+     <div class="instructions" >
+        <b>Controls</b>
+
+        <div class='controls'>
+          Speed Up: [+]<br />
+          Speed Down: [-]<br />
+          Pause: [P]<br />
+          Start: [S]<br />
+        </div>
+     </div>
+
+</div>
+
+
+	<div class="game_area">
+		<img id="rat" src="rat.png" alt="Rat" class='hide'>
+		<img id="cheese" src="cheese.png" alt="Cheese" class='hide'>
 
 		<canvas id="gameDisplay" class="game-display" width="700" height="350">
 			Canvas is not supported by your browser
@@ -18,5 +72,5 @@
 
 
 </body>
-   <script type="text/javascript" src="deathCircle.js"></script>
+   <script type="text/javascript" src="game.js"></script>
 </html>
