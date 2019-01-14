@@ -1,0 +1,13 @@
+html, body{
+	font-size:12px;
+	margin:0px; 
+	padding:0px;
+	background-color:rgb(30,10,30);
+}
+
+.center{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
